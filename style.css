@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #11c4ff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 720px;
+    min-width: 1000;
+    border-radius: 20px;
+    margin: 20px 160px;
+    overflow: hidden;
+    background-color: rgb(233, 248, 250);
+}
+
+.sidecontainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+    background: url(./images/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg);
+    background-size: cover;
+
+
+}
+
+.logocontainer {
+    flex: 0;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: #ffffff;
+    font-family: 'Poppins';
+    padding-top: 10px;
+}
+
+;
+
+.logocontainer h1 {
+    padding: 1px;
+}
+
+.logocontainer img {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+}
+
+.credit {
+    flex: 0;
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    font-family: 'Poppins';
+    width: 450px;
+    letter-spacing: 1px;
+}
+
+.credit a,
+.credit a:hover,
+.credit a:link,
+.credit a:active,
+.credit a:visited {
+    color: #eee;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    flex: 1;
+    font-family: 'Roboto';
+}
+
+.forminfo {
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    padding: 50px 120px 15px 50px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.forminfo p {
+    padding: 0px;
+}
+
+.formcontainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 30px 50px;
+    gap: 20px;
+    background-color: #f0fbff;
+    position: relative;
+    box-shadow: 0 2px 6px #aaa;
+}
+
+.formcontainer p {
+    font-family: 23px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.formcontainer label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.formrow {
+    display: flex;
+    gap: 70px;
+}
+
+.formrow input {
+    appearance: none;
+    display: block;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+}
+
+.formrow input:focus {
+    outline: 0;
+    border: 1px solid #00a2ff;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    transition: all 0.3s linear;
+}
+
+.formrow .errorMsg {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+}
+
+.submit {
+    padding: 30px 0 0 50px;
+}
+
+.submit button {
+    background-color: rgb(153, 93, 0, 0.8);
+    color: #eee;
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding: 15px 50px;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.submit button:hover {
+    background-color: rgb(153, 92, 0, 0.6);
+}
+
+.submit button:active {
+    background-color: rgb(153, 92, 0, 1);
+}
+
+.submit p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.submit p a {
+    text-decoration: none;
+    color: #995c00;
+    font-weight: 800;
+}
+
+.submit p a:hover {
+    text-decoration: underline;
+}
